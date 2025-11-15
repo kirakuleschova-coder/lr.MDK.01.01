@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassDann.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RasetAndSortirovka.cs" />
+    <Compile Include="UpravlenieDann.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
