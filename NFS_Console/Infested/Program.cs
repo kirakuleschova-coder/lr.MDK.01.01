@@ -36,6 +36,7 @@ namespace Infested
             avtomobili.Add(avtomobil);
             avtomobili.Add(avtomobil1);
 
+
         }
     }
 }
