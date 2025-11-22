@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +14,24 @@ namespace Infested
         static void PrintModel(Car model)
         {
             Console.WriteLine(model.GetModel());
+        }
+        static void LadaVsMersedez(List<Car> avtomobili)
+        {
+            while (true)
+            {
+                int t = 1;
+                foreach (Car avtomobil in avtomobili)
+                {
+                    int move = (avtomobil.GetSpeed / 50 * t);
+                    for(int i = 1; i < move; i++)
+                    {
+                        Console.WriteLine(" ");
+                    }
+                    Console.WriteLine(avtomobil.GetSpeed());
+                }
+                t;
+                    Thread.Sleep(2000);
+            }
         }
         static void Main(string[] args)
         {
