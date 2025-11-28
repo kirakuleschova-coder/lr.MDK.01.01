@@ -17,4 +17,4 @@ namespace DistantZadanie1
         public double Revenue => Price * Quantity;
     }
 }
-}
+
