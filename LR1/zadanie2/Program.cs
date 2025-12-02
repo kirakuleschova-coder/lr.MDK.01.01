@@ -10,22 +10,23 @@ namespace zadanie2
     {
         static void Main(string[] args)
         {
-            int[] array = new int[3000];
-            Random random = new Random();
-            for (int i = 0; i < array.Length; i++)
+            int[] array = new int[3000];// Создание массива из 3000 элементов
+            Random random = new Random();// Создание объекта Random для генерации случайных чисел
+            for (int i = 0; i < array.Length; i++)// Заполнение массива случайными числами от 10 до 9999
             {
                 array[i] = random.Next(10, 10000);
             }
-            Console.WriteLine("Исходные данные: ");
+            Console.WriteLine("Исходные данные: ");// Вывод исходного массива (ВНИМАНИЕ: выведет 3000 чисел в одну строку!)
             Console.WriteLine("[" + string.Join(", ", array) + "]");
-            List<int> Summa = new List<int>();
-            for (int i = 0; i < array.Length - 2; i += 2)
+            List<int> Summa = new List<int>();// Создание списка для хранения сумм
+            for (int i = 0; i < array.Length - 2; i += 2)// Цикл с шагом 2: суммирование array[i] + array[i+2]
+                                                         // Условие i < array.Length - 2 предотвращает выход за границы массива
             {
-                int sum = array[i] + array[i + 2];
+                int sum = array[i] + array[i + 2];// Сумма текущего элемента и элемента через один
                 Summa.Add(sum);
             }
-            Console.WriteLine("Результат: ");
-            Console.WriteLine("[" + string.Join(", ", Summa) + "]");
+            Console.WriteLine("Результат: ");// Вывод результата
+            Console.WriteLine("[" + string.Join(", ", Summa) + "]");// Вывод результата
         }
     }
 }
