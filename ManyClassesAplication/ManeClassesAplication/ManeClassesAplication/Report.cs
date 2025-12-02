@@ -28,6 +28,10 @@ namespace ManeClassesAplication
             }
             return sb.ToString();
         }
+        public override string ToString()
+        {
+            return ConvertAllToString();
+        }
         public void CalculateSum()
         {
             double sum = 0;
@@ -35,7 +39,7 @@ namespace ManeClassesAplication
             {
                 sum += row.Quantity * row.Price;
             }
-            Console.WriteLine("Сумма  - " + sum);
+            Console.WriteLine("Сумма: " + sum + "руб.");
         }
     }
 }

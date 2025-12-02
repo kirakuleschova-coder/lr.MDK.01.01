@@ -21,8 +21,8 @@ namespace ManeClassesAplication
             Storage storage = new Storage();
             storage.SetId(123);
             storage.SetLocation("Торжок, Ул. Студенческая 3");
-            storage.SetProductQuantity(mers, 2);
-            storage.SetProductQuantity(yaz, 5);
+            storage.SetProductQuantity(mers, 3);
+            storage.SetProductQuantity(yaz, 7);
 
             storage.GetProductQuantity();
             storage.CalculateMoney();
@@ -33,13 +33,17 @@ namespace ManeClassesAplication
 
             ReportRow row1 = new ReportRow();
             row1.Product = "Mers";
-            row1.Quantity = 500;
-            row1.Price = 100;
+            row1.Quantity = 3;
+            row1.Price = 1000000;
 
             ReportRow row2 = new ReportRow();
             row2.Product = "Vaz";
-            row2.Quantity = 100;
-            row2.Price = 5192;
+            row2.Quantity = 7;
+            row2.Price = 10000000;
+
+
+            report.AddRecord(row1);
+            report.AddRecord(row2);
 
             Console.WriteLine("Содержимое отчета:");
             Console.WriteLine(report);
