@@ -41,6 +41,7 @@
             // 
             this.DatePickerTime.CalendarMonthBackground = System.Drawing.Color.LightPink;
             this.DatePickerTime.CalendarTrailingForeColor = System.Drawing.Color.LightPink;
+            this.DatePickerTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.DatePickerTime.Location = new System.Drawing.Point(62, 97);
             this.DatePickerTime.Name = "DatePickerTime";
             this.DatePickerTime.Size = new System.Drawing.Size(139, 20);
@@ -71,7 +72,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(12, 23);
+            this.label4.Location = new System.Drawing.Point(12, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 24);
             this.label4.TabIndex = 7;
@@ -113,6 +114,7 @@
             this.ButtonCheck.TabIndex = 10;
             this.ButtonCheck.Text = "Проверь";
             this.ButtonCheck.UseVisualStyleBackColor = false;
+            this.ButtonCheck.Click += new System.EventHandler(this.ButtonCheck_Click);
             // 
             // FormCheck
             // 
