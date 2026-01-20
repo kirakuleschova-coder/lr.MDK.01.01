@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace TextUsing
 {
-    public partial class Form1 : Form
+    public partial class FormCheck : Form
     {
-        public Form1()
+        public FormCheck()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            E
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
