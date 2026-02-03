@@ -26,7 +26,7 @@ namespace TestForm
         private void EnterButton_Click(object sender, EventArgs e)
         {
             List<User> check = AllLoginAndPassword.Load();
-            string login = LoginTextBox.Text;
+            string login = LoginСomboBox.Text;
             string password = PasswordTextBox.Text;
             User user = new User(login, password);
             if(Contains(check, user))
@@ -51,5 +51,10 @@ namespace TestForm
             return false;
         }
 
+        private void LoginСomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedUser = LoginСomboBox.SelectedItem.ToString();
+            List<User> userSelected = 
+        }
     }
 }

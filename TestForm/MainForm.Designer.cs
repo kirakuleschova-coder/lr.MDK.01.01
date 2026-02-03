@@ -33,7 +33,7 @@
             this.EnterButton = new System.Windows.Forms.Button();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.LoginTextBox = new System.Windows.Forms.TextBox();
+            this.LoginСomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // PasswordLabel
@@ -87,12 +87,14 @@
             this.PasswordTextBox.Size = new System.Drawing.Size(164, 20);
             this.PasswordTextBox.TabIndex = 6;
             // 
-            // LoginTextBox
+            // LoginСomboBox
             // 
-            this.LoginTextBox.Location = new System.Drawing.Point(142, 7);
-            this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(164, 20);
-            this.LoginTextBox.TabIndex = 6;
+            this.LoginСomboBox.FormattingEnabled = true;
+            this.LoginСomboBox.Location = new System.Drawing.Point(142, 7);
+            this.LoginСomboBox.Name = "LoginСomboBox";
+            this.LoginСomboBox.Size = new System.Drawing.Size(164, 21);
+            this.LoginСomboBox.TabIndex = 7;
+            this.LoginСomboBox.SelectedIndexChanged += new System.EventHandler(this.LoginСomboBox_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -100,7 +102,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(431, 73);
-            this.Controls.Add(this.LoginTextBox);
+            this.Controls.Add(this.LoginСomboBox);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.EnterButton);
@@ -120,7 +122,7 @@
         private System.Windows.Forms.Button EnterButton;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.TextBox LoginTextBox;
+        private System.Windows.Forms.ComboBox LoginСomboBox;
     }
 }
 
