@@ -9,6 +9,5 @@ namespace TestForm
     interface IUsersInterface
     {
         List<User> Load();
-
     }
 }

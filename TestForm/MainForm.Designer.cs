@@ -40,7 +40,7 @@
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.Location = new System.Drawing.Point(12, 9);
+            this.PasswordLabel.Location = new System.Drawing.Point(12, 41);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.PasswordLabel.Size = new System.Drawing.Size(124, 18);
@@ -61,18 +61,19 @@
             this.EnterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.EnterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EnterButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.EnterButton.Location = new System.Drawing.Point(311, 9);
+            this.EnterButton.Location = new System.Drawing.Point(311, 7);
             this.EnterButton.Name = "EnterButton";
-            this.EnterButton.Size = new System.Drawing.Size(108, 52);
+            this.EnterButton.Size = new System.Drawing.Size(108, 54);
             this.EnterButton.TabIndex = 4;
             this.EnterButton.Text = "Войти";
             this.EnterButton.UseVisualStyleBackColor = false;
+            this.EnterButton.Click += new System.EventHandler(this.EnterButton_Click);
             // 
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.Location = new System.Drawing.Point(12, 41);
+            this.LoginLabel.Location = new System.Drawing.Point(16, 9);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LoginLabel.Size = new System.Drawing.Size(114, 18);
@@ -81,14 +82,14 @@
             // 
             // PasswordTextBox
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(141, 10);
+            this.PasswordTextBox.Location = new System.Drawing.Point(142, 39);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(164, 20);
             this.PasswordTextBox.TabIndex = 6;
             // 
             // LoginTextBox
             // 
-            this.LoginTextBox.Location = new System.Drawing.Point(141, 41);
+            this.LoginTextBox.Location = new System.Drawing.Point(142, 7);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.Size = new System.Drawing.Size(164, 20);
             this.LoginTextBox.TabIndex = 6;

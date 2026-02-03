@@ -11,18 +11,18 @@ namespace TestForm
         private string login_;
         private string password_;
 
-        User(string login, string password)
-        {
-            login_ = login;
-            password_ = password;
-        }
+        public User(string login, string password)
+               {
+                     login_ = login;
+                     password_ = password;
+               }
 
-        string Login
+        public string Login
         {
             get { return login_; }
         }
 
-        string Password
+        public string Password
         {
             get { return password_; }
         }

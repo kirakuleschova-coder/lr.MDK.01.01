@@ -12,6 +12,7 @@ namespace TestForm
 {
     public partial class MainForm : Form
     {
+        private FileUsersStorage AllLoginAndPassword = new FileUsersStorage();
         public MainForm()
         {
             InitializeComponent();
@@ -21,5 +22,34 @@ namespace TestForm
         {
 
         }
+
+        private void EnterButton_Click(object sender, EventArgs e)
+        {
+            List<User> check = AllLoginAndPassword.Load();
+            string login = LoginTextBox.Text;
+            string password = PasswordTextBox.Text;
+            User user = new User(login, password);
+            if(Contains(check, user))
+            {
+                MessageBox.Show("Уроооо, ты смог зайти!!!");
+            }
+            else
+            {
+                MessageBox.Show("Оуууу ноу, не взламывай");
+            }
+
+        }
+        private bool Contains(List<User> check, User user)
+        {
+            foreach (User u in check)
+            {
+                if (user.Login == u.Login && user.Password == u.Password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }
