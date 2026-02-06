@@ -13,9 +13,19 @@ namespace TestForm
     public partial class MainForm : Form
     {
         private FileUsersStorage AllLoginAndPassword = new FileUsersStorage();
+        private List<string> logins = new List<string>();
         public MainForm()
         {
             InitializeComponent();
+            List<User> allers = new List<User>();
+            allers = AllLoginAndPassword.Load();
+
+            foreach (User u in allers)
+            {
+                logins.Add(u.Login);
+            }
+
+            LoginСomboBox.DataSource = logins;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -25,11 +35,13 @@ namespace TestForm
 
         private void EnterButton_Click(object sender, EventArgs e)
         {
-            List<User> check = AllLoginAndPassword.Load();
+
+
+            List<User> Alls = AllLoginAndPassword.Load();
             string login = LoginСomboBox.Text;
             string password = PasswordTextBox.Text;
-            User user = new User(login, password);
-            if(Contains(check, user))
+
+            if (AllLoginAndPassword.Authorize(login, password))
             {
                 MessageBox.Show("Уроооо, ты смог зайти!!!");
             }
@@ -39,22 +51,10 @@ namespace TestForm
             }
 
         }
-        private bool Contains(List<User> check, User user)
-        {
-            foreach (User u in check)
-            {
-                if (user.Login == u.Login && user.Password == u.Password)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
 
         private void LoginСomboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedUser = LoginСomboBox.SelectedItem.ToString();
-            List<User> userSelected = 
+
         }
     }
 }
