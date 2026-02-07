@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5472EC19-EE20-45FC-958B-BB7BDA7E0389}</ProjectGuid>
+    <ProjectGuid>{A1914FFB-1706-4474-B07A-E1E4C4360E5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lr_3</RootNamespace>
-    <AssemblyName>Lr 3</AssemblyName>
+    <RootNamespace>Var1_LR3</RootNamespace>
+    <AssemblyName>Var1 LR3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,10 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tovar.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
