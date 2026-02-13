@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ModelViewBibloteka.Models
 {
-    interface IUsersModel
+    public interface IUsersModel
     {
         List<User> Load();
         bool Register(User user);
