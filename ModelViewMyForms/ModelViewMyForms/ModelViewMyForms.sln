@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewMyForms", "ModelViewMyForms.csproj", "{7BA0E9BC-329F-4156-BE96-05176DD2E744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBibloteka", "..\ModelViewBibloteka\ModelViewBibloteka.csproj", "{29E38E82-B959-47A3-8E95-4B1A74E6D61B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BA0E9BC-329F-4156-BE96-05176DD2E744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA0E9BC-329F-4156-BE96-05176DD2E744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA0E9BC-329F-4156-BE96-05176DD2E744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA0E9BC-329F-4156-BE96-05176DD2E744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E38E82-B959-47A3-8E95-4B1A74E6D61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E38E82-B959-47A3-8E95-4B1A74E6D61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E38E82-B959-47A3-8E95-4B1A74E6D61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E38E82-B959-47A3-8E95-4B1A74E6D61B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
