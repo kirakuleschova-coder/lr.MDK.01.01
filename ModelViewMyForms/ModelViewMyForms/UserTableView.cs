@@ -10,10 +10,25 @@ namespace ModelViewMyForms
 {
     public class UserTableView : DataGridView, IUserView
     {
-     public void ShowUsers(List<User> allUsers)
+        // Явная реализация интерфейса (то, что предложила VS)
+        void IUserView.ShowUser(List<User> allUsers_)
         {
-            DataSource = allUsers;
+            DataSource = allUsers_;
         }
-        void IUserView.ShowUser(List<User>)
+        public List<User> GetSelectedUsers()
+        {
+            List<User> result = new List<User>();
+            foreach (var row in SelectedRows)
+            {
+                result.Add(row as User);
+            }
+
+            return result;
+        }
+
+        public void ShowUsers(List<User> users)
+        {
+            DataSource = users;
+        }
     }
 }

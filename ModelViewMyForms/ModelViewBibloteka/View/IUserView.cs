@@ -10,5 +10,6 @@ namespace ModelViewBibloteka.View
     public interface IUserView
     {
         void ShowUser(List<User> allUser);
+        List<User> GetSelectedUsers();
     }
 }
