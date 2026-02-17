@@ -1,4 +1,8 @@
-﻿using System;
+﻿using ModelViewBibloteka.Model_View;
+using ModelViewBibloteka.Models;
+using ModelViewBibloteka.Presenter;
+using ModelViewBibloteka.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +16,19 @@ namespace ModelViewMyForms
 {
     public partial class Form1 : Form
     {
+        private UserPresenter presenter_;
         public Form1()
         {
             InitializeComponent();
-            UsersTableView usertable = new UsersTableView();
+            presenter_ = new UserPresenter(new MemoryUsersModel(), IUserView);
+        }
 
+        
+
+        private void RemoveToolStripButton_Click(object sender, EventArgs e)
+        {
+            List<User> selectedUsers = .GetSelectedUsers();
+            presenter_.RemoveUsers(selectedUsers);
         }
     }
 }

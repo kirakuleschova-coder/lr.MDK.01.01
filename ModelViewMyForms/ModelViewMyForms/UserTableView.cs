@@ -1,4 +1,5 @@
 ﻿using ModelViewBibloteka.Model_View;
+using ModelViewBibloteka.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +11,12 @@ namespace ModelViewMyForms
 {
     public class UserTableView : DataGridView, IUserView
     {
-        // Явная реализация интерфейса (то, что предложила VS)
-        void IUserView.ShowUser(List<User> allUsers_)
-        {
-            DataSource = allUsers_;
-        }
         public List<User> GetSelectedUsers()
         {
             List<User> result = new List<User>();
-            foreach (var row in SelectedRows)
+            foreach (DataGridViewRow row in SelectedRows)
             {
-                result.Add(row as User);
+                result.Add(row.DataBoundItem as User);
             }
 
             return result;
@@ -28,7 +24,18 @@ namespace ModelViewMyForms
 
         public void ShowUsers(List<User> users)
         {
+            DataSource = null;
             DataSource = users;
+        }
+
+        List<User> IUserView.GetSelectedUsers()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IUserView.ShowUser(List<User> users)
+        {
+            throw new NotImplementedException();
         }
     }
 }

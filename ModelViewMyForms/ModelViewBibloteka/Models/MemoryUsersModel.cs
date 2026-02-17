@@ -32,5 +32,17 @@ namespace ModelViewBibloteka.Models
             }
             return false;
         }
+
+        public void RemoveUsers(List<User> users)
+        {
+            foreach(User user in users)
+            {
+                int targeIndex = allUser_.FindIndex(local => local.Loogin == user.Loogin);
+                if (targeIndex >= 0)
+                {
+                    allUser_.RemoveAt(targeIndex);
+                }
+            }
+        }
     }
 }

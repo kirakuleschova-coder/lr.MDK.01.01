@@ -18,8 +18,13 @@ namespace ModelViewBibloteka.Presenter
             model_ = model;
             views_ = views;
 
-            List<User> users_ = model.Load();
-            views_.ShowUser(users_);
+            views_.ShowUser(model_.Load());
+        }
+
+        public void RemoveUsers(List<User> users)
+        {
+            model_.RemoveUsers(users);
+            views_.ShowUser(model_.Load());
         }
     }
 }
