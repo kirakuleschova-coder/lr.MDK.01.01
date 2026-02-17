@@ -20,14 +20,18 @@ namespace ModelViewMyForms
         public Form1()
         {
             InitializeComponent();
-            presenter_ = new UserPresenter(new MemoryUsersModel(), IUserView);
+            UserTableView presenter = new UserTableView();
+            Controls.Add(presenter);
+            presenter.Dock = DockStyle.Top;
+            presenter_ = new UserPresenter(
+                new MemoryUsersModel(), presenter);
         }
 
         
 
         private void RemoveToolStripButton_Click(object sender, EventArgs e)
         {
-            List<User> selectedUsers = .GetSelectedUsers();
+            List<User> selectedUsers = UserView.GetSelectedUsers();
             presenter_.RemoveUsers(selectedUsers);
         }
     }
