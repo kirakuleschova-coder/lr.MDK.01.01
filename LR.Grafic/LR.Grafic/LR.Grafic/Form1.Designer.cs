@@ -40,7 +40,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(13, 13);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 498);
+            this.listBox1.Size = new System.Drawing.Size(120, 550);
             this.listBox1.TabIndex = 1;
             // 
             // fileSystemWatcher1
@@ -50,17 +50,17 @@
             // 
             // pieChart1
             // 
-            this.pieChart1.Location = new System.Drawing.Point(386, 36);
+            this.pieChart1.Location = new System.Drawing.Point(157, 3);
             this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(253, 134);
+            this.pieChart1.Size = new System.Drawing.Size(634, 300);
             this.pieChart1.TabIndex = 2;
             this.pieChart1.Text = "pieChart1";
             // 
             // cartesianChart1
             // 
-            this.cartesianChart1.Location = new System.Drawing.Point(139, 263);
+            this.cartesianChart1.Location = new System.Drawing.Point(139, 331);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(742, 248);
+            this.cartesianChart1.Size = new System.Drawing.Size(742, 232);
             this.cartesianChart1.TabIndex = 3;
             this.cartesianChart1.Text = "cartesianChart1";
             // 
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 524);
+            this.ClientSize = new System.Drawing.Size(930, 584);
             this.Controls.Add(this.cartesianChart1);
             this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.listBox1);
