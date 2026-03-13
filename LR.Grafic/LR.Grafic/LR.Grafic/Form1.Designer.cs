@@ -28,56 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.CartesianChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.CartesianChart)).BeginInit();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CartesianChart
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.CartesianChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.CartesianChart.Legends.Add(legend1);
-            this.CartesianChart.Location = new System.Drawing.Point(150, 13);
-            this.CartesianChart.Name = "CartesianChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.CartesianChart.Series.Add(series1);
-            this.CartesianChart.Size = new System.Drawing.Size(622, 420);
-            this.CartesianChart.TabIndex = 0;
-            this.CartesianChart.Text = "chart1";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(13, 13);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 420);
+            this.listBox1.Size = new System.Drawing.Size(120, 498);
             this.listBox1.TabIndex = 1;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // pieChart1
+            // 
+            this.pieChart1.Location = new System.Drawing.Point(386, 36);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(253, 134);
+            this.pieChart1.TabIndex = 2;
+            this.pieChart1.Text = "pieChart1";
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Location = new System.Drawing.Point(139, 263);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(742, 248);
+            this.cartesianChart1.TabIndex = 3;
+            this.cartesianChart1.Text = "cartesianChart1";
             // 
             // MyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(893, 524);
+            this.Controls.Add(this.cartesianChart1);
+            this.Controls.Add(this.pieChart1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.CartesianChart);
             this.Name = "MyForm";
             this.Text = "LiveCharts - диаграмма";
-            ((System.ComponentModel.ISupportInitialize)(this.CartesianChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart CartesianChart;
         private System.Windows.Forms.ListBox listBox1;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        private LiveCharts.WinForms.PieChart pieChart1;
     }
 }
 
