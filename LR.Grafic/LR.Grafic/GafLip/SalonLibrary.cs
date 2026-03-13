@@ -67,13 +67,13 @@ namespace GafLip
                 services.Add(new Service("Стрижка", 500m,
                     new int[] { 5, 6, 4, 7, 8, 5, 6 }));    
 
-                services.Add(new Service("Окрашивание", 1500m,
+                services.Add(new Service("Окрашивание", 34000m,
                     new int[] { 2, 1, 3, 2, 4, 2, 1 }));
 
-                services.Add(new Service("Маникюр", 800m,
+                services.Add(new Service("Маникюр", 4560m,
                     new int[] { 4, 5, 6, 5, 7, 6, 5 }));
 
-                services.Add(new Service("Массаж", 1200m,
+                services.Add(new Service("Массаж", 15500m,
                     new int[] { 1, 2, 2, 1, 3, 2, 2 }));
             }
         }
