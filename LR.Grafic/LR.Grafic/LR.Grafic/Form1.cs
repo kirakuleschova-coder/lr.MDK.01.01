@@ -97,7 +97,7 @@ namespace LR.Grafic
             cartesianChart1.AxisY.Clear();
             cartesianChart1.AxisY.Add(new Axis
             {
-                Title = "Количество оказаний",
+                Title = "Количество выполненых услуг",
 
                 MinValue = 0,
 
